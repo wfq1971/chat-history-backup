@@ -1,0 +1,12 @@
+# .cnb/web_trigger.yml
+# 定义代码分支详情页的手动触发按钮
+
+branch:
+  - buttons:
+      - name: 构建测试
+        description: 手动触发构建与测试流程
+        event: web_trigger_build_test
+        isDefault: true
+      - name: wine.exe测试
+        description: 手动触发 Wine + Xvfb 测试
+        event: web_trigger_wine_test

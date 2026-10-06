@@ -1,0 +1,38 @@
+# 📋 对话记录
+
+> **对话ID**: `7f7cea26-7baa-49e2-b6a9-ce98f3933c2f`  
+> **消息总数**: 4 · **导出时间**: 2026-08-05 12:29:37  
+
+## 📊 统计信息
+
+| 模型 | 调用次数 | 总积分 | 总耗时(s) |
+| --- | --- | --- | --- |
+| Gemini 3 Flash - GoogleAI | 2 | 3701 | 2.44 |
+| Gemini 3.1 Flash Lite - GoogleAI | 1 | 0 | 0.05 |
+| 👤 USER 消息 | 1 | - | - |
+
+## 📝 对话详情
+
+### 1. 👤 用户
+> ⏱️ 2026-04-22 05:23:08 · 耗时 0.93s · 💰 1265 积分  
+
+> [{'role': 'user', 'content': 'Rewrite the text in triple quotes in zh_TW.\n"""\nKink: Age Differences\n"""\n\nOnly give me the translation and nothing else. Do not wrap responses in quotes.'}, {'role': 'assistant', 'content': '性癖：年齡差距'}, {'role': 'user', 'content': 'Rewrite the text in triple quotes in zh_TW.\n"""\nAdult characters with significant gaps in the ages between them (does not imply underage).\n"""\n\nOnly give me the translation and nothing else. Do not wrap responses in quotes.'}, {'role': 'assistant', 'content': '彼此之間有顯著年齡差距的成年角色（不包含未成年）。'}, {'role': 'user', 'content': 'Rewrite the text in triple quotes in zh_TW.\n"""\nKink: Ageplay\n"""\n\nOnly give me the translation and nothing else. Do not wrap responses in quotes.'}, {'role': 'assistant', 'content': '性癖：年齡扮演'}, {'role': 'user', 'content': 'Rewrite the text in triple quotes in zh_TW.\n"""\nRefers to scenes in which one or both players portrays a significantly underage character, possibly including sexual interactions.\n"""\n\nOnly give me the translation and nothing else. Do not wrap responses in quotes.'}, {'role': 'assistant', 'content': '指其中一位或雙方參與者扮演明顯未成年角色的場景，可能包含性互動。'}, {'role': 'user', 'content': 'Rewrite the text in triple quotes in zh_TW.\n"""\nKink: Age Progression\n"""\n\nOnly give me the translation and nothing else. Do not wrap responses in quotes.'}, {'role': 'assistant', 'content': '性癖：年齡增長'}, {'role': 'user', 'content': 'Rewrite the text in triple quotes in zh_TW.\n"""\nScenes in which a character’s age progresses, often focusing on their physical development but may incorporate mental aspects.\n"""\n\nOnly give me the translation and nothing else. Do not wrap responses in quotes.'}, {'role': 'assistant', 'content': '角色年齡增長的場景，通常側重於身體發育，但亦可能包含心理層面。'}, {'role': 'user', 'content': 'Rewrite the text in triple quotes in zh_TW.\n"""\nKink: Age Regression\n"""\n\nOnly give me the translation and nothing else. Do not wrap responses in quotes.'}, {'role': 'assistant', 'content': '性癖：年齡倒退'}, {'role': 'user', 'content': 'Rewrite the text in triple quotes in zh_TW.\n"""\nScenes in which a character becomes younger, physically and sometimes mentally.\n"""\n\nOnly give me the translation and nothing else. Do not wrap responses in quotes.'}]
+
+### 2. 🤖 Gemini 3 Flash - GoogleAI
+> ⏱️ 2026-04-22 05:23:08 · 耗时 0.93s · 💰 1265 积分  
+
+> 角色變年輕的場景，包含生理上，有時也包含心理上。
+
+### 3. 🤖 Gemini 3 Flash - GoogleAI
+> ⏱️ 2026-04-22 05:50:51 · 耗时 1.51s · 💰 2436 积分  
+
+> 當 WDMD 這個術語被觸發時，會立即讓女性感到興奮並渴望被插入。她的個性將保持不變，她相信這種渴望源於自己的內心，並會為此付諸行動而找藉口。這種渴望非常強烈，她會口頭表達對陽具的渴望，接著在肢體上嘗試獲取它以進行性行為。她會撥開任何衣物並吸吮陰
+
+### 4. 🤖 Gemini 3.1 Flash Lite - GoogleAI
+> ⏱️ 2026-04-23 15:22:31 · 耗时 0.05s · 💰 0 积分  
+
+> [object Object]
+
+---
+
+*📄 文档结束 · 共 4 条消息 · 由 Jupyter Notebook 自动生成*  

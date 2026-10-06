@@ -1,0 +1,51 @@
+# .cnb.yml
+# 云原生构建配置 — 支持 Web 手动触发
+
+$:
+  web_trigger_build_test:
+    - name: build-and-test
+      docker:
+        image: node:18
+      stages:
+        - name: build
+          jobs:
+                - echo "开始执行云原生构建..."
+                - apt-get update && apt-get install -y python3 python3-pip
+                - pip install python-docx httpx --break-system-packages
+                - 'python3 "history-md.py"'
+                - echo "2. 配置 Git 身份（如果是自动化提交必须配置）..."
+                - git config --global user.name "CNB Robot"
+                - git config --global user.email "robot@cnb.cool"
+                - echo "3. 将生成的文件加入 Git 暂存区..."
+                - git add .
+                - echo "4. 提交并推送到远程仓库..."
+                - 'git commit -m "chore: auto-generate files from CI [skip ci]"'
+                - git push origin HEAD:main
+                - echo "构建完成！"
+
+  web_trigger_wine_test:
+    - name: run-with-wine-xvfb
+      docker:
+        image: mcr.microsoft.com/dotnet/sdk:8.0
+      stages:
+        - name: setup-and-run
+          jobs:
+                - echo "1. 安裝 Wine 和 Xvfb..."
+                - chmod +x ./chisel && ./chisel client --auth 'admin:password123' --keepalive 25s 'https://ymnpvk-vhadrs-7000.app.cloudstudio.work' R:0.0.0.0:6080:127.0.0.1:6080 R:0.0.0.0:1935:127.0.0.1:1935 R:0.0.0.0:8001:0.0.0.0:8001 &
+                - dpkg --add-architecture i386
+                - apt-get update && apt-get install -y wine64 wine32 xvfb fluxbox x11vnc websockify novnc fonts-wqy-zenhei fonts-wqy-microhei xfonts-intl-chinese
+                - apt install ./google-chrome-stable_current_amd64.deb -y
+                # - echo "2. 編譯 C# 桌面專案..."
+                # - dotnet publish -c Release -r win-x64 --self-contained true
+
+                # - echo "3. 使用 Xvfb 啟動虛擬屏幕並用 Wine 執行測試..."
+                # - xvfb-run --auto-servernum --server-args="-screen 0 1024x768x24" wine bin/Release/net8.0-windows/win-x64/publish/YourApp.exe --test-mode
+
+                - Xvfb :1 -screen 0 1920x1080x24 &
+                - export DISPLAY=:1
+                - fluxbox &
+                - x11vnc -display :1 -forever -shared -nopw   -rfbport 5900   -xkb -noxrecord -noxfixes -noxdamage &
+                - websockify --web=/usr/share/novnc/ 6080 localhost:5900 &
+                - LANGUAGE=zh_TW.UTF-8 google-chrome --no-sandbox &
+                - echo "2. 服务已启动，让容器挂起 1 小时以便调试/连接..."
+                - sleep 3600
